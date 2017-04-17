@@ -108,11 +108,22 @@
   font-family: Roboto;
   font-size: 22px;
   color: #fff;
+  transition: all 200ms ease-in-out;
 }
 
 .main-nav.nav-fixed nav ul li a {
   font-size: 18px;
   color: #000;
+}
+
+.main-nav nav ul li a.active {
+  padding-bottom: 15px;
+  box-shadow: 0px 4px 0px 0px rgba(26, 81, 123, 1);
+}
+
+.main-nav nav ul li a:hover,
+.main-nav.nav-fixed nav ul li a:hover {
+  color: rgba(26, 81, 123, 1);
 }
 
 .header-main-heading {
