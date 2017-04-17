@@ -46,12 +46,19 @@ $( document ).ready(function() {
       }
     });
 
-    
+
 
     $(".myname").on('click', function(e) {
       e.preventDefault();
       $('.about-me').toggleClass('active');
     });
+
+    lightbox.option({
+      'maxWidth' : 1200,
+      'fitImagesInViewport' : true,
+      'positionFromTop' : 100
+    })
+
 });
 
 function scaleVideoContainer() {
