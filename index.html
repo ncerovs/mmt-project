@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FERIT | Web programiranje</title>
+  <link rel="shortcut icon" type="image/png" href="public/assets/img/favicon.png"/>
 
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,13 +22,14 @@
         <div class="main-nav">
           <div class="container">
             <div class="uni-logo">
-              <img src="public/assets/img/ferit.png" alt="FERIT">
+              <a href="https://www.ferit.unios.hr/">
+                <img src="public/assets/img/ferit.png" alt="FERIT">
+              </a>
             </div>
             <nav>
               <ul>
-                <li><a href="#">Naslovna</a></li>
-                <li><a href="#">O kolegiju</a></li>
-                <li><a href="#">Izradio</a></li>
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="oop.html">Najdraži kolegij</a></li>
               </ul>
             </nav>
           </div>
@@ -42,8 +44,9 @@
         <div class="header-arrow bounce"></div>
 
         <video autoplay loop class="fillWidth">
-            <source src="public/assets/video/codingbg.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="public/assets/video/codingbg.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="public/assets/video/codingbg.mp4" type="video/mp4">
+            <source src="public/assets/video/codingbg.webm" type="video/webm">
+            Your browser does not support the video element.
         </video>
         <div class="poster hidden">
             <img src="public/assets/img/video-prev.jpg" alt="">
@@ -51,9 +54,194 @@
     </div>
   </header>
   <section id="about">
-    <h1 class="section-heading">O kolegiju</h1>
-    <p>Osnovna ideja ovog kolegija je studente upoznati sa osnovnim pojmovima web programiranja. Studenti kroz kolegij uče raditi sa tehnologijama na strani klijenta i poslužitelja: HTML, CSS, JavaScript i jQuery, te PHP i MySQL.</p>
+    <div class="slider">
+      <div class="slider-container" data-position="0">
+        <div class="slider-item">
+          <div class="slider-item-container">
+            <h1 class="item-heading">Osnovni podatci o kolegiju</h1>
+            <div id="main-info" class="row">
+              <p>Kolegij web programiranje upoznaje studente sa osnovama izrade web stranica i web aplikacija. Održava se u 3. godini stručnog studija informatike. Studenti kroz kolegij uče raditi sa tehnologijama na strani klijenta i poslužitelja - HTML5, CSS3, JavaScript, jQuery i PHP.</p>
+              <p>Uspješnim savladavanjem kolegija, studenti mogu analizirati i riješiti konkretne probleme, te kombinirati različite tehnologije za izradu web aplikacije i predvidjeti moguća proširenja</p>
+              <audio controls>
+                <source src="public/assets/audio/webdev-audio.ogg" type="audio/ogg">
+                <source src="public/assets/audio/webdev-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              <h2>ECTS bodovi: <em>6.5</em></h2>
+              <h2>Način polaganja: <em>projektni zadatak</em></h2>
+              <h2>Satnica: <em>30PR, 15AV, 30LV</em></h2>
+            </div>
+            <div class="row image-row">
+              <img id="webdev-img" src="public/assets/img/webdev.svg" alt="web programiranje">
+            </div>
+          </div>
+        </div>
+        <div class="slider-item ishodi">
+          <div class="slider-item-container">
+            <h1 class="item-heading">Ishodi učenja</h1>
+            <h2>Studenti će uspješnim savladavanjem kolegija naučiti:</h2>
+            <ul>
+              <li>Objasniti način komunikacije između web preglednika i poslužitelja.</li>
+              <li>Usporediti različite tehnologije i upotrijebiti ih u izradi web dokumenata.</li>
+              <li>Identificirati klijentske i poslužiteljske tehnologije i odabrati odgovarajuće tehnologije za specifični zadatak.</li>
+              <li>Izabrati odgovarajući način pristupa bazi podataka preko weba i povezati s primjerima.</li>
+              <li>Analizirati i riješiti konkretan problem, kombinirati različite tehnologije za izradu web aplikacije i predvidjeti moguća proširenja.</li>
+            </ul>
+            <h2>Korisni linkovi:</h2>
+            <a class="btn" href="http://www.etfos.unios.hr/studiji/strucni-studij/SR501/7#anc">Više o kolegiju</a>
+            <a class="btn" href="https://loomen.carnet.hr/enrol/index.php?id=3637">Loomen</a>
+            <a class="btn" href="https://www.fsb.unizg.hr/atlantis/wms/moduli/zrno/ispis_kolegiji.php?kolegij_id=648">FSB</a>
+            <a class="btn" href="https://www.w3schools.com/">W3Schools</a>
+            <a class="btn" href="https://www.codecademy.com/">CodeCademy</a>
+          </div>
+        </div>
+        <div class="slider-item tehnologije">
+          <div class="slider-item-container">
+            <h1 class="item-heading">Kratki pregled tehnologija obuhvaćenih u kolegiju</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FXqTHsPaY0A?ecver=1" frameborder="0" allowfullscreen></iframe>          </div>
+        </div>
+        <div class="slider-item ucenje">
+          <div class="slider-item-container">
+            <h1 class="item-heading">Uvod u frontend web programiranje</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T6jKLsxbFg4?ecver=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-prev">
+        <img src="public/assets/img/back.svg">
+      </div>
+      <div class="arrow-next">
+        <img src="public/assets/img/next.svg">
+      </div>
+    </div>
   </section>
+
+  <section id="nastavnici">
+    <h1 class="item-heading">Nastavnici</h1>
+    <div class="container">
+      <div class="nastavnik">
+        <a href="http://www.etfos.unios.hr/fakultet/imenik-djelatnika/nenadic#anc">Krešimir Nenadić</a>
+        <a href="public/assets/img/nenadic-full.jpg"><span class="photo"></span></a>
+        <h2>Izv.prof.dr.sc</h2>
+        <p>Nositelj kolegija</p>
+        <h3>kresimir.nenadic@etfos.hr</h3>
+      </div>
+
+      <div class="nastavnik">
+        <a href="http://www.etfos.unios.hr/fakultet/imenik-djelatnika/mkohler#anc">Mirko Köhler</a>
+        <a href="public/assets/img/kohler-full.jpg"><span class="photo"></span></a>
+        <h2>Doc.dr.sc</h2>
+        <p>Suradnik</p>
+        <h3>mirko.kohler@etfos.hr</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="znanje">
+    <div class="container">
+      <h1 class="item-heading">Što je najkorisnije što sam naučio na ovom kolegiju?</h1>
+      <p>Pohađanjem kolegija, proširio sam svoje znanje, te naučio primijeniti različite tehnologije web programiranja i kombinirati ih pri izradi web stranica i web aplikacija.</p>
+      <h2>Moji projekti</h2>
+    </div>
+    <div class="image-container-large">
+      <div class="close-image">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="https://ncerovs.github.io/eyewear/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/eyewear-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="https://ncerovs.github.io/gym-sports/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/gymsports-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="https://ncerovs.github.io/arcaneui/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/arcaneui-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="http://infinite-plains-55198.herokuapp.com/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/app-large.png" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="http://infinite-plains-55198.herokuapp.com/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/up-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="http://codepen.io/ncerovs/full/qNmbLV/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/weather-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="http://codepen.io/ncerovs/pen/XKMLVw"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/quote-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay">
+          <div class="icons-wrap">
+            <a href="https://ncerovs.github.io/Arists-Theme/"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <a href="public/assets/img/projects/dt-large.jpeg" class="large-image"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page-author">
+    <h1 class="item-heading">Stranicu izradio</h1>
+    <div class="container">
+      <a href="public/assets/img/ncerovski.bmp">
+        <img src="public/assets/img/ncerovski-small.bmp" alt="Nikola Cerovski">
+      </a>
+      <h1 class="myname">Nikola Cerovski</h1>
+      <div class="about-me">
+        <p>Rođen sam 04.06.1994. u <a href="http://www.osijek.hr/">Osijeku</a>, trenutačno živim u <a href="http://www.nasice.hr/hr/">Našicama</a>. Završio sam <a href="http://www.os-dpejacevic-na.skole.hr/">Osnovnu školu Dore Pejačević</a> i <a href="http://ss-ikrsnjavoga-nasice.skole.hr/">Prirodoslovno matematičku gimnaziju u Našicama</a>. Trenutačno pohađam stručni studij informatike na <a href="https://www.ferit.unios.hr/">Fakultetu elektrotehnike, računarstva i informacijskih tehnologija u Osijeku.</a></p>
+        <a class="btn" href="https://www.facebook.com/ncerovski">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a class="btn" href="https://github.com/ncerovs/">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="btn" href="http://codepen.io/ncerovs/pens/public/">
+          <i class="fa fa-codepen" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h1>Web stranica je izrađena za vrijeme pohađanja <a href="https://www.ferit.unios.hr">Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijek</a> u u sklopu kolegija <a href="https://www.ferit.unios.hr/studiji/strucni-studij/SR601/7#anc">Multimedijska tehnika</a></h1>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="public/scripts/functions.js"></script>
